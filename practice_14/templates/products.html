@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+  </head>
+  <body>
+    <div>
+      {% for p in products %}
+      <div>
+        <h2>{{ p.name }}</h2>
+        <a href="{{ p.get_absolute_url }}">Перейти</a>
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>
